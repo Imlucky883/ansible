@@ -1,0 +1,11 @@
+---
+- name: Copy a file
+  hosts: app
+  become: yes
+  tasks:
+  - name: Copy a file
+    copy:
+       src: /usr/src/security/index.html
+       dest: /opt/security
+
+# The become is to be used here to provide sufficient permission to write the file
