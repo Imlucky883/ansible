@@ -1,0 +1,7 @@
+- name: Create a file with content
+  hosts: all
+  tasks:
+    - name: Create a file with content
+      file:
+        path: /tmp/file.txt
+        state: touch
